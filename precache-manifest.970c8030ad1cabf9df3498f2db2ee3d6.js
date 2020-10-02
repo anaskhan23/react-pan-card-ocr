@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d708e21023dff7d0971576c9e8a3fe8a",
+    "revision": "9456033b5a361ebb6c6cc992c6d46ea1",
     "url": "/react-pan-card-ocr/index.html"
   },
   {
-    "revision": "b2652fc36c59c35b63f2",
-    "url": "/react-pan-card-ocr/static/css/main.cdf92dec.chunk.css"
+    "revision": "de9b1158b0febf754658",
+    "url": "/react-pan-card-ocr/static/css/main.b879cd11.chunk.css"
   },
   {
-    "revision": "955449aa216f38d707c2",
-    "url": "/react-pan-card-ocr/static/js/2.da19fdab.chunk.js"
+    "revision": "c2a522662612cc699a7b",
+    "url": "/react-pan-card-ocr/static/js/2.8b6ed366.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/react-pan-card-ocr/static/js/2.da19fdab.chunk.js.LICENSE.txt"
+    "url": "/react-pan-card-ocr/static/js/2.8b6ed366.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b2652fc36c59c35b63f2",
-    "url": "/react-pan-card-ocr/static/js/main.e6120f51.chunk.js"
+    "revision": "de9b1158b0febf754658",
+    "url": "/react-pan-card-ocr/static/js/main.c864eaba.chunk.js"
   },
   {
     "revision": "6d9aff7c89fa4e3411b2",

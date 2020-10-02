@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-pan-card-ocr/precache-manifest.abad5a8da8357ae203f14d2218d917d1.js"
+  "/react-pan-card-ocr/precache-manifest.970c8030ad1cabf9df3498f2db2ee3d6.js"
 );
 
 self.addEventListener('message', (event) => {
