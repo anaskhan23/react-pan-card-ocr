@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Tesseract from "tesseract.js";
 import img from "../src/assets/images/pan.jpg";
-import logo from "../src/assets/images/logo.png";
+import logo from "../src/assets/images/logo1.png";
 import "./App.css";
 import ImageWrapper from "./components/ImageWrapper";
 import FormWrapper from "./components/FormWrapper";
@@ -12,9 +12,8 @@ var obj = {};
 const load = async () => {
 	const result = await Tesseract.recognize(img, "eng");
 	// settext(result.data.text);
-	console.log(result.data.text);
 	var str = result.data.text.replace(/[-\n%,=.*+?^$&{}()|[\]\\]/g, " ");
-	var arr = [`Birth`, `Father's Name`, `Name`, `Number`];
+	var arr = [`Birth`, `Father`, `Name`, `Number`];
 	// var obj = {};
 	arr.map((item) => {
 		const index = str.indexOf(item);
@@ -24,11 +23,8 @@ const load = async () => {
 	obj[`Number`] = obj[`Number`].match(/([A-Z]{5}[0-9]{4}[A-Z]{1})/g);
 	obj[`Birth`] = obj[`Birth`].match(/([0-9]{2}[-/.][0-9]{2}[-/.][0-9]{4})/g);
 	obj[`Name`] = obj[`Name`].match(/(\b[A-Z][A-Z]+|\b[A-Z]\b)/g);
-	obj[`Father's Name`] = obj[`Father's Name`].match(
-		/(\b[A-Z][A-Z]+|\b[A-Z]\b)/g
-	);
 
-	console.log(JSON.stringify(obj));
+	obj[`Father`] = obj[`Father`].match(/(\b[A-Z][A-Z]+|\b[A-Z]\b)/g);
 };
 load();
 function App() {
@@ -44,8 +40,7 @@ function App() {
 
 	const convertImageToText = async () => {
 		setLoading(true);
-		const result = await Tesseract.recognize(imageUrl, "eng");
-		console.log("Aaaaaa", result, result.data.text);
+		const result = await Tesseract.recognize(img, "eng");
 		settext(result.data.text);
 		setLoading(false);
 	};
@@ -78,23 +73,10 @@ function App() {
 				{text == null ? (
 					<ImageWrapper uploadFile={uploadFile} />
 				) : (
-					<FormWrapper text={text} />
+					<FormWrapper text={obj} />
 				)}
 			</div>
 		</div>
 	);
 }
 export default App;
-
-// str =str.replace(/[-\n%,=.*+?^$&{}()|[\]\\]/g, ' ');
-// var arr = [`Birth`,`Father's Name`,`Name`,`Number`]
-// var obj = {};
-// arr.map(item=>{
-//     index = str.indexOf(item);
-//     obj[item] = str.substring(index);
-//     str = str.substring(0,index)
-// })
-// obj[`Number`] = obj[`Number`].match(/([A-Z]{5}[0-9]{4}[A-Z]{1})/g);
-// obj[`Birth`] = obj[`Birth`].match(/([0-9]{2}[-/.][0-9]{2}[-/.][0-9]{4})/g);
-// obj[`Name`] = obj[`Name`].match(/(\b[A-Z][A-Z]+|\b[A-Z]\b)/g);
-// obj[`Father's Name`] = obj[`Father's Name`].match(/(\b[A-Z][A-Z]+|\b[A-Z]\b)/g);
