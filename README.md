@@ -33,4 +33,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 ### Flow of the Application
-![](react-pan-card-ocr/Process.jpg)
+![](https://github.com/anaskhan23/react-pan-card-ocr/blob/master/Process.jpg)
