@@ -71,7 +71,7 @@ function App() {
 			<div className="container">
 				{loading && <div className="loader"></div>}
 				{text == null ? (
-					<ImageWrapper uploadFile={uploadFile} />
+					<ImageWrapper uploadFile={uploadFile} loading={loading} />
 				) : (
 					<FormWrapper text={obj} />
 				)}
