@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9456033b5a361ebb6c6cc992c6d46ea1",
+    "revision": "bd5b84871d5b8adba2b5068c51448062",
     "url": "/react-pan-card-ocr/index.html"
   },
   {
-    "revision": "de9b1158b0febf754658",
+    "revision": "1e9753473c4593735ac6",
     "url": "/react-pan-card-ocr/static/css/main.b879cd11.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-pan-card-ocr/static/js/2.8b6ed366.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de9b1158b0febf754658",
-    "url": "/react-pan-card-ocr/static/js/main.c864eaba.chunk.js"
+    "revision": "1e9753473c4593735ac6",
+    "url": "/react-pan-card-ocr/static/js/main.aa5348f5.chunk.js"
   },
   {
     "revision": "6d9aff7c89fa4e3411b2",
